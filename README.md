@@ -1,6 +1,9 @@
 # 🎬 Mobile Movie App
 
 A modern mobile application for movie discovery and management, built with **Expo** and **React Native**.
+<div align="center">
+  <img src="assets/images/readme_cover.jpg" alt="Mobile Movie App"/>
+</div>
 
 ## 📱 About the Project
 
