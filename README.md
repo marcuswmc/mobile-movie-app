@@ -1,50 +1,137 @@
-# Welcome to your Expo app 👋
+# 🎬 Mobile Movie App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um aplicativo mobile moderno para descoberta e gerenciamento de filmes, desenvolvido com **Expo** e **React Native**.
 
-## Get started
+## 📱 Sobre o Projeto
 
-1. Install dependencies
+O **Mobile Movie App** é uma aplicação multiplataforma que permite aos usuários:
+- 🔍 Pesquisar filmes
+- 💾 Salvar filmes favoritos
+- 👤 Gerenciar perfil de usuário
+- 📺 Visualizar detalhes dos filmes
 
+## 🛠️ Tecnologias Utilizadas
+
+- **Expo** - Framework para desenvolvimento React Native
+- **React Native** - Framework para desenvolvimento mobile
+- **TypeScript** - Linguagem de programação tipada
+- **NativeWind** - Framework CSS para React Native
+- **Tailwind CSS** - Framework de utilitários CSS
+- **Expo Router** - Sistema de roteamento baseado em arquivos
+- **React Navigation** - Navegação entre telas
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+- Expo CLI
+- Android Studio (para Android) ou Xcode (para iOS)
+
+### Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone [URL_DO_REPOSITORIO]
+   cd mobile-movie-app
+   ```
+
+2. **Instale as dependências**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Inicie o projeto**
    ```bash
+   npm start
+   # ou
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+### Opções de Execução
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Após executar `npm start`, você terá as seguintes opções:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Expo Go**: Escaneie o QR code com o app Expo Go no seu dispositivo
+- **Android Emulator**: Pressione `a` para abrir no emulador Android
+- **iOS Simulator**: Pressione `i` para abrir no simulador iOS (apenas macOS)
+- **Web**: Pressione `w` para abrir no navegador
 
-## Get a fresh project
+## 📁 Estrutura do Projeto
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+mobile-movie-app/
+├── app/                    # Páginas da aplicação (Expo Router)
+│   ├── (tabs)/            # Navegação por abas
+│   │   ├── index.tsx      # Tela inicial
+│   │   ├── search.tsx     # Tela de pesquisa
+│   │   ├── saved.tsx      # Tela de filmes salvos
+│   │   └── profile.tsx    # Tela de perfil
+│   ├── movies/            # Páginas de filmes
+│   │   └── [id].tsx       # Detalhes do filme
+│   └── _layout.tsx        # Layout principal
+├── assets/                # Recursos estáticos
+│   ├── icons/            # Ícones da aplicação
+│   ├── images/           # Imagens e backgrounds
+│   └── fonts/            # Fontes personalizadas
+├── constants/            # Constantes e configurações
+├── interfaces/           # Definições de tipos TypeScript
+└── types/               # Tipos adicionais
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎨 Design System
 
-## Learn more
+O projeto utiliza um sistema de cores personalizado:
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Primary**: `#030014` - Cor principal escura
+- **Secondary**: `#151312` - Cor secundária
+- **Accent**: `#AB8BFF` - Cor de destaque
+- **Light**: Tons claros para textos e elementos
+- **Dark**: Tons escuros para backgrounds
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📱 Funcionalidades
 
-## Join the community
+### ✅ Implementadas
+- [x] Estrutura base do projeto
+- [x] Navegação por abas
+- [x] Sistema de roteamento
+- [x] Configuração de estilos com NativeWind
+- [x] Definição de interfaces TypeScript
 
-Join our community of developers creating universal apps.
+### 🚧 Em Desenvolvimento
+- [ ] Integração com API de filmes
+- [ ] Interface de pesquisa
+- [ ] Sistema de favoritos
+- [ ] Perfil de usuário
+- [ ] Detalhes dos filmes
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔧 Scripts Disponíveis
+
+```bash
+npm start          # Inicia o servidor de desenvolvimento
+npm run android    # Executa no emulador Android
+npm run ios        # Executa no simulador iOS
+npm run web        # Executa no navegador
+npm run lint       # Executa o linter
+```
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 🤝 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📞 Suporte
+
+Se você encontrar algum problema ou tiver dúvidas, abra uma [issue](https://github.com/seu-usuario/mobile-movie-app/issues) no repositório.
+
+---
+
+Desenvolvido com ❤️ usando Expo e React Native
